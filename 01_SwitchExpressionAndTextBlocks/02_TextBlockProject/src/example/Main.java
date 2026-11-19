@@ -1,9 +1,20 @@
 package example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static java.lang.StringTemplate.STR;
 
 public class Main {
-    public static void main(String[] args) {
+
+
+
+
+    public static void main( String[] args) {
+
+
+        int x = 5;
+
         String html = """
         <html>
             <body>Hello World</body>
@@ -20,14 +31,18 @@ public class Main {
         System.out.println(text);
 
 
-        String name = "Lisa";
+        String name = "Lisa".repeat(5);
         String message = STR."""
+                \s
                 Hello \{name},
-                Welcome to Java 21!
-                """;
+                \sWelcome to Java 21!\
+                                    """;
 
         System.out.println(message);
     }
 
 
 }
+
+
+
